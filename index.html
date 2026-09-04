@@ -5,97 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DEE'S EVENT - Organisation d'événements</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f8f8f8; color: #333; line-height: 1.6; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #FFF8F0; color: #333; }
     
     header {
-      background: #8B0000; /* Rouge bordeaux */
+      background: linear-gradient(135deg, #FF8C00, #FFA500); /* Orange */
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-    header h1 { font-size: 2.5rem; }
-    header p { font-size: 1.2rem; margin-top: 10px; }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.3rem; margin-top: 10px; }
     
-    section { padding: 50px 20px; max-width: 1100px; margin: auto; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
     
-    #services h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #8B0000; }
+    #services h2 { text-align: center; margin-bottom: 50px; font-size: 2.2rem; color: #FF8C00; }
     .service-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
     .service {
       background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(255,140,0,0.2);
+      overflow: hidden;
       transition: 0.3s;
+      border-top: 5px solid #FF8C00;
     }
-    .service:hover { transform: translateY(-5px); }
-    .service h3 { color: #8B0000; margin-bottom: 10px; font-size: 1.3rem; }
+    .service:hover { transform: translateY(-8px); }
+    .service img { width: 100%; height: 200px; object-fit: cover; }
+    .service-content { padding: 20px; }
+    .service h3 { color: #FF8C00; margin-bottom: 10px; font-size: 1.4rem; }
     
-    #contact { background: #8B0000; color: white; text-align: center; border-radius: 10px; }
-    #contact h2 { margin-bottom: 20px; }
-    .btn {
+    #social { background: #FF8C00; color: white; text-align: center; border-radius: 15px; }
+    #social .btn-tiktok {
       display: inline-block;
-      background: white;
-      color: #8B0000;
-      padding: 12px 25px;
-      border-radius: 5px;
+      background: black;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
       margin-top: 15px;
     }
     
-    footer { text-align: center; padding: 20px; background: #222; color: white; }
+    #contact { text-align: center; }
+    .btn {
+      display: inline-block;
+      background: #FF8C00;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    footer { text-align: center; padding: 20px; background: #FF8C00; color: white; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>DEE'S EVENT</h1>
-    <p>Votre spécialiste en organisation d'événements à Bamako</p>
+    <p>Anniversaire • Baptême • Mariage • Autres Événements</p>
   </header>
 
   <section id="services">
     <h2>Nos Services</h2>
     <div class="service-list">
-      
       <div class="service">
-        <h3>🎂 Anniversaire</h3>
-        <p>Organisation complète de vos anniversaires : décoration, sonorisation, photo et animation.</p>
+        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800" alt="Anniversaire">
+        <div class="service-content"><h3>🎂 Anniversaire</h3><p>Déco, gâteau, animation, son. On rend votre jour spécial inoubliable.</p></div>
       </div>
-
       <div class="service">
-        <h3>👶 Baptême</h3>
-        <p>Nous rendons votre baptême inoubliable avec une cérémonie et réception parfaitement organisées.</p>
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=800" alt="Baptême">
+        <div class="service-content"><h3>👶 Baptême</h3><p>Cérémonie élégante et réception chaleureuse pour accueillir bébé.</p></div>
       </div>
-
       <div class="service">
-        <h3>💍 Mariage</h3>
-        <p>Le mariage de vos rêves : salle, traiteur, décoration, animation DJ et photographe.</p>
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800" alt="Mariage">
+        <div class="service-content"><h3>💍 Mariage</h3><p>De A à Z : salle, traiteur, déco, DJ, photo. Votre mariage de rêve.</p></div>
       </div>
-
       <div class="service">
-        <h3>🎉 Autres Événements</h3>
-        <p>Conférences, séminaires, soirées d'entreprise, fiançailles et toutes vos célébrations.</p>
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800" alt="Autres">
+        <div class="service-content"><h3>🎉 Autres Événements</h3><p>Conférences, séminaires, fiançailles, soirées privées.</p></div>
       </div>
-
     </div>
+  </section>
+
+  <section id="social">
+    <h2>Suivez-nous sur TikTok</h2>
+    <p>Regarde nos vidéos d'événements et coulisses</p>
+    <a href="https://tiktok.com/@maraka_daishi_choco" class="btn-tiktok" target="_blank">📱 @maraka_daishi_choco</a>
   </section>
 
   <section id="contact">
     <h2>Contactez-nous</h2>
-    <p>Prêt à organiser votre événement ? Parlons-en !</p>
     <p>📞 +223 93 22 74 90</p>
     <p>📍 Bamako, Mali</p>
-    <a href="https://wa.me/22393227490" class="btn">Écrivez-nous sur WhatsApp</a>
+    <a href="https://wa.me/22393227490" class="btn">WhatsApp</a>
   </section>
 
   <footer>
-    <p>© 2026 DEE'S EVENT. Tous droits réservés.</p>
+    <p>© 2026 DEE'S EVENT. Orange & Blanc 💛</p>
   </footer>
 
 </body>
